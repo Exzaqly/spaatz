@@ -45,24 +45,24 @@ const cssLoaders = extra => {
 
 const plugins = () => {
     const base = [
-            new HTMLWebpackPlugin({
-                template: "./index.html",
-                minify: {
-                    collapseWhitespace: isProd,
-                }
-            }),
-            new CleanWebpackPlugin(),
-            new CopyWebpackPlugin({
-                patterns:[
-                    {from: path.resolve(__dirname, 'src/icon.ico'),
-                        to: path.resolve(__dirname, 'dist')
-                    }]
-            }),
-            new MiniCssExtractPlugin({
-                filename: filename('css'),
-            }),
+        new HTMLWebpackPlugin({
+            template: "./index.html",
+            minify: {
+                collapseWhitespace: isProd,
+            }
+        }),
+        new CleanWebpackPlugin(),
+        new CopyWebpackPlugin({
+            patterns:[
+                {from: path.resolve(__dirname, 'src/spaatz_icon.svg'),
+                    to: path.resolve(__dirname, 'dist')
+                }]
+        }),
+        new MiniCssExtractPlugin({
+            filename: filename('css'),
+        }),
 
-        ];
+    ];
 
     if (isProd) {
         base.push(new BundleAnalyzerPlugin())
@@ -79,7 +79,6 @@ module.exports = {
     mode: 'development',
     entry: {
         main: './index.js',
-        anal: './anal.js',
     },
     output: {
         filename: filename('js'),

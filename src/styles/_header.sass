@@ -1,0 +1,83 @@
+.header
+  background: url("../assets/header_bg_img.jpg"), no-repeat
+  -webkit-background-size: cover
+  background-size: cover
+  padding: 40px 50px 60px 50px
+  &-toolbar
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__logo
+      background-image: url('../assets/spaatz_logo.svg')
+      -webkit-background-size: cover
+      background-size: cover
+      height: 60px
+      width: 184px
+    &__navigation
+      a
+        font-family: 'OpenSansRegular', sans-serif
+        font-size: 18px
+        line-height: 20px
+        margin-right: 60px
+        color: #1B2534
+        text-decoration: none
+        &:first-child
+          margin-left: 60px
+        &:hover
+          color: #0082F3
+    &__button
+      font-family: 'OpenSansBold', sans-serif
+      font-size: 18px
+      padding: 17px 31px
+      color: #ffffff
+      background-color: #1B2534
+      border: 1px solid #1B2534
+      border-radius: 17px
+      &:hover
+        color: #29A0F5
+        cursor: pointer
+  &-text
+    text-align: center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding-top: 120px
+    h1
+      font-family: 'OpenSansBold', sans-serif
+      font-size: 80px
+      line-height: 104px
+      span
+        color: #29A0F5
+    &__button
+      display: flex
+      align-items: center
+      padding-left: 36px
+      font-family: 'OpenSansBold', sans-serif
+      font-size: 20px
+      line-height: 20px
+      background: #FFFFFF
+      border: 1px solid #FFFFFF
+      border-radius: 20px
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+      margin-bottom: 530px
+      &:hover
+        color: #29A0F5
+        cursor: pointer
+      &-img
+        margin: 27px 24px 27px 19px
+        background: url("../assets/header_txt_btn.svg")
+        background-size: cover
+        height: 18px
+        width: 28px
+  &-main-img
+    position: absolute
+    top: 700px
+    left: 50%
+    transform: translate(-50%, 0)
+    background: url("../assets/header-main-img.jpg"), no-repeat
+    -webkit-background-size: cover
+    background-size: cover
+    height: 805px
+    width: 1340px
+
