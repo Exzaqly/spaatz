@@ -54,9 +54,17 @@ const plugins = () => {
         new CleanWebpackPlugin(),
         new CopyWebpackPlugin({
             patterns:[
-                {from: path.resolve(__dirname, 'src/spaatz_icon.svg'),
+                {from: path.resolve(__dirname, 'src/assets/icons/features-diamond.svg'),
                     to: path.resolve(__dirname, 'dist')
-                }]
+                },
+                {from: path.resolve(__dirname, 'src/assets/icons/features-lock.svg'),
+                    to: path.resolve(__dirname, 'dist')
+                },
+                {from: path.resolve(__dirname, 'src/assets/icons/spaatz_icon.svg'),
+                    to: path.resolve(__dirname, 'dist')
+                }
+                ]
+
         }),
         new MiniCssExtractPlugin({
             filename: filename('css'),
