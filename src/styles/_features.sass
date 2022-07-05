@@ -16,9 +16,10 @@
 
 
   &-wrap
-    display: flex
-    align-items: center
-
+      display: flex
+      align-items: flex-end
+      justify-content: center
+      margin-bottom: 40px
 
   &-description
     flex: 48%
@@ -54,4 +55,128 @@
         p
           margin: 0
 
+  &-block
+    display: flex
+    flex-direction: column
+    padding: 20px 40px 20px 40px
+    border-radius: 20px
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06)
+    background: #FFFFFF
+    &__content
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+      margin-right: 50px
 
+    h2
+      font-family: 'OpenSansBold', sans-serif
+      width: 80%
+      margin: 25px 0 0 0
+      font-size: 35px
+      line-height: 45px
+    &__icons
+      display: flex
+      align-items: center
+      justify-content: space-around
+      margin-top: 30px
+      margin-bottom: 20px
+    &__icon
+      &_ps
+        background: url("../assets/ps_icon.png")
+        -webkit-background-size: cover
+        background-size: cover
+        height: 44px
+        width: 44px
+
+      &_xd
+        background: url("../assets/xd_icon.png")
+        -webkit-background-size: cover
+        background-size: cover
+        height: 44px
+        width: 44px
+
+      &_fig
+        background: url("../assets/fig_icon.png")
+        -webkit-background-size: cover
+        background-size: cover
+        height: 44px
+        width: 53px
+        margin-left: 60px
+        margin-right: 60px
+      &_img
+        background: url("../assets/img_icon.png")
+        -webkit-background-size: cover
+        background-size: cover
+        height: 44px
+        width: 46px
+      &_aud
+        background: url("../assets/aud_icon.png")
+        -webkit-background-size: cover
+        background-size: cover
+        height: 44px
+        width: 47px
+      &_vid
+        background: url("../assets/vid_icon.png")
+        -webkit-background-size: cover
+        background-size: cover
+        height: 44px
+        width: 46px
+      &_gif
+        background: url("../assets/gif_icon.png")
+        -webkit-background-size: cover
+        background-size: cover
+        height: 44px
+        width: 46px
+
+    &__img
+      &_site
+        background: url("../assets/features-block-img.png")
+        -webkit-background-size: cover
+        background-size: cover
+        width: 361px
+        height: 210px
+      &_graph
+        background: url("../assets/features-block-img2.png")
+        -webkit-background-size: cover
+        background-size: cover
+        width: 212px
+        height: 210px
+      &_chart
+        background: url("../assets/chart.jpg")
+        -webkit-background-size: cover
+        background-size: cover
+        width: 563px
+        height: 292px
+
+
+.middle_block
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-direction: row
+  padding-top: 40px
+  padding-bottom: 0
+  margin: 0 16px 0 16px
+  h2
+    width: 33%
+    margin: 0
+    text-transform: none
+
+.last_block
+  flex: 28%
+  margin-left: 16px
+  padding: 40px 40px 20px 40px
+  h2
+    margin-bottom: 30px
+    text-transform: none
+    width: 90%
+.dark_block
+  h2
+    margin: 0 0 20px 0
+    text-align: right
+  padding: 0
+  background-color: #161D2D
+  color: #FFFFFF
+  flex-direction: row
+  align-items: center
+  border-radius: 33px

@@ -62,7 +62,10 @@ const plugins = () => {
                 },
                 {from: path.resolve(__dirname, 'src/assets/icons/spaatz_icon.svg'),
                     to: path.resolve(__dirname, 'dist')
-                }
+                },
+                {from: path.resolve(__dirname, 'src/assets/icons/white_button_icon.svg'),
+                    to: path.resolve(__dirname, 'dist')
+                },
                 ]
 
         }),
