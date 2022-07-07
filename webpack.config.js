@@ -119,7 +119,7 @@ module.exports = {
             },
             {
                 test: /\.(ttf|woff|woff2|eot)$/,
-                type: 'asset/resource'
+                type: 'asset/inline'
             },
             {
                 test: /\.xml$/,
