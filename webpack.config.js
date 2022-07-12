@@ -55,27 +55,7 @@ const plugins = () => {
         new CopyWebpackPlugin({
             patterns: [
                 {
-                    from: path.resolve(__dirname, 'src/assets/icons/features_diamond.svg'),
-                    to: path.resolve(__dirname, 'dist')
-                },
-                {
-                    from: path.resolve(__dirname, 'src/assets/icons/features_lock.svg'),
-                    to: path.resolve(__dirname, 'dist')
-                },
-                {
-                    from: path.resolve(__dirname, 'src/assets/icons/spaatz_icon.svg'),
-                    to: path.resolve(__dirname, 'dist')
-                },
-                {
-                    from: path.resolve(__dirname, 'src/assets/icons/white_button_icon.svg'),
-                    to: path.resolve(__dirname, 'dist')
-                },
-                {
-                    from: path.resolve(__dirname, 'src/assets/icons/star_icon.svg'),
-                    to: path.resolve(__dirname, 'dist')
-                },
-                {
-                    from: path.resolve(__dirname, 'src/assets/icons/dot-img.svg'),
+                    from: path.resolve(__dirname, 'src/assets/icons'),
                     to: path.resolve(__dirname, 'dist')
                 },
             ]
