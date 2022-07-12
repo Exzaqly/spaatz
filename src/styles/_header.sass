@@ -3,7 +3,7 @@
   -webkit-background-size: cover
   background-size: cover
   padding: 40px 50px 60px 50px
-  margin-bottom: 525px
+  margin-bottom: 400px
 
   &-toolbar
     display: flex
@@ -18,30 +18,33 @@
       width: 184px
 
     &__navigation
+      flex-basis: 50%
+      display: flex
+      justify-content: space-between
       a
         font-size: 18px
         line-height: 20px
-        margin-right: 60px
         color: #1B2534
         text-decoration: none
-
-        &:first-child
-          margin-left: 60px
-
         &:hover
           color: #0082F3
 
     &__button
+      transition: 0.2s
       font-family: 'OpenSansBold', sans-serif
-      font-size: 18px
-      padding: 17px 31px
+      text-align: center
+      font-size: 20px
+      line-height: 20px
+      padding: 17px 36px
       color: #ffffff
       background-color: #1B2534
       border: 1px solid #1B2534
       border-radius: 17px
 
       &:hover
+        transition: 0.2s
         color: #29A0F5
+        background-color: #FFFFFF
         cursor: pointer
 
   &-text
@@ -90,9 +93,111 @@
     top: 700px
     left: 50%
     transform: translate(-50%, 0)
-    background: url("../assets/header-main-img.jpg"), no-repeat
+    background: url("../assets/header-main-img.png"), no-repeat
     -webkit-background-size: cover
     background-size: cover
     height: 805px
     width: 1340px
+
+
+@media (max-width: 1440px)
+ .header
+  &-text
+    h1
+      font-size: 70px
+      line-height: 90px
+  &__button
+   margin-bottom: 400px
+
+  &-main-img
+   top: 650px
+   height: 685px
+   width: 1140px
+
+@media (max-width: 1200px)
+  .header
+    &-toolbar
+     &__button
+       font-size: 16px
+       padding: 12px 25px
+     &__navigation
+       a
+         font-size: 14px
+    &-text
+     h1
+       font-size: 60px
+       line-height: 80px
+     &__button
+      margin-bottom: 350px
+    &-main-img
+      top: 600px
+      height: 577px
+      width: 960px
+
+@media (max-width: 992px)
+  .header
+    margin-bottom: 200px
+    &-toolbar
+     &__logo
+        height: 40px
+        width: 122px
+     &__button
+        font-size: 14px
+        line-height: 16px
+        padding: 10px 15px
+     &__navigation
+        a
+          font-size: 14px
+    &-text
+      h1
+        font-size: 45px
+        line-height: 60px
+      &__button
+        margin-bottom: 300px
+        font-size: 14px
+        line-height: 16px
+        padding-left: 20px
+        img
+          height: 15px
+          width: 20px
+          margin: 18px 15px 18px 14px
+    &-main-img
+      top: 500px
+      height: 435px
+      width: 720px
+
+@media (max-width: 768px)
+  .header
+    margin-bottom: 150px
+    &-toolbar
+      &__navigation
+        display: none
+    &-text
+      h1
+        font-size: 35px
+        line-height: 45px
+      &__button
+        margin-bottom: 200px
+    &-main-img
+      top: 440px
+      height: 325px
+      width: 540px
+
+@media (max-width: 480px)
+
+  .header
+    margin-bottom: 150px
+    &-toolbar
+      &__navigation
+        display: none
+    &-text
+      h1
+        font-size: 22px
+        line-height: 30px
+      &__button
+        margin-bottom: 200px
+    &-main-img
+      top: 440px
+      height: 192px
+      width: 320px
 
