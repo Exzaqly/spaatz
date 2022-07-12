@@ -1,10 +1,12 @@
 .advantages
   h2
     text-align: center
+
   &-wrap
     display: flex
     margin-top: 60px
     margin-bottom: 140px
+
   &-img
     background: url("../assets/2charts_with_bg.png")
     -webkit-background-size: cover
@@ -14,33 +16,39 @@
     border-radius: 20px
     margin-left: 30px
     margin-top: 30px
+
   &-blocks
     width: 455px
     display: flex
     flex-direction: column-reverse
+
   &-block
     padding: 8px 40px 20px 0px
     border-radius: 20px
     color: #ABABAB
     transition: 0.5s
+
     &:hover
       background-color: #1B2534
       color: #FFFFFF
       padding: 40px 20px 50px 40px
       transition: 0.5s
-      &~.first-block
+
+      & ~ .first-block
         background-color: #FFFFFF
         color: #ABABAB
         padding: 8px 40px 20px 0px
         transition: 0.5s
 
     &__title
-      font-family: "OpenSansBold",sans-serif
+      font-family: "OpenSansBold", sans-serif
       font-size: 35px
       margin: 0
+
     &__text
       text-transform: none
       font-size: 20px
+
 .first-block
   background-color: #1B2534
   color: #FFFFFF
