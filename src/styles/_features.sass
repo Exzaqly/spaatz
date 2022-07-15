@@ -220,6 +220,7 @@
 @media (max-width: 1200px)
 
   .features
+    margin-bottom: 75px
     &-block
       &__img
         &_chart
@@ -245,33 +246,89 @@
         height: 368px
         width: 425px
         align-self: center
+      &__workplace
+        align-self: center
+        width: 450px
+        height: 265px
   .last_block
     h3
       margin-top: 10px
 
 @media (max-width: 992px)
   .features
+    margin-bottom: 50px
     &-img
       &__presentation
         height: 277px
         width: 320px
+      &__workplace
+        align-self: center
+        width: 350px
+        height: 200px
+    &-block
+      h3
+        line-height: 30px
+        &:first-child
+          margin-bottom: 0
+      &__img
+        &_site
+          width: 250px
+          height: 145px
+        &_graph
+         width: 146px
+         height: 145px
+        &_chart
+          margin-top: 10px
+          height: 132px
+          width: 255px
+      &__icons
+        margin-top: 10px
+
 
     &-description
       margin-right: 20px
       font-size: 16px
       line-height: 30px
 
-
+  .dark_block
+    padding: 10px
+    button
+      padding-left: 16px
+  .last_block
+    h3
+      width: 100%
 @media (max-width: 768px)
  .features
    text-align: center
    &-wrap
      display: block
+     &_grey
+       display: block
+       margin-bottom: 0
+       &:first-child
+         margin-bottom: 20px
+   &-block
+     margin-bottom: 20px
+     margin-left: 35px
+     margin-right: 35px
+     &:first-child
+       h3
+         width: 100%
+     &__img
+       &_graph
+         margin: auto
+
+
    &-img
      &__presentation
        height: 450px
        width: 520px
        margin-bottom: 20px
+     &__workplace
+       align-self: center
+       width: 450px
+       height: 265px
+       margin: auto
    &-description
      margin-right: 0
      &-block
@@ -283,6 +340,25 @@
       &__presentation
         height: 277px
         width: 320px
+      &__workplace
+        width: 320px
+        height: 189px
+    &-block
+      margin-right: 0
+      margin-left: 0
+      &__img
+        &_chart
+          margin: auto
+        &_site
+          margin: auto
+      &__content
+        h3
+          text-align: center
+          margin-bottom: 5px
+        button
+          margin: auto
+          padding-left: 36px
+
     &-description
       margin-right: 0
       font-size: 12px
@@ -292,3 +368,10 @@
         &__text
           h3
             font-size: 20px
+  .middle_block
+    display: block
+    h3
+      width: 100%
+      margin-bottom: 5px
+  .dark_block
+    display: block
