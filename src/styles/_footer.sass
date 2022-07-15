@@ -5,9 +5,10 @@
 
   &-wrap
     display: flex
+    align-items: flex-end
 
   &-links
-    width: 674px
+    flex-basis: 50%
     background-color: #283343
     margin-right: 30px
     margin-left: 30px
@@ -24,10 +25,11 @@
 
       &_title
         font-family: "OpenSansBold", sans-serif
-        margin: 0
         color: #FFFFFF
         line-height: 30px
         font-size: 20px
+        margin-top: 0
+        margin-bottom: 15px
 
       a
         transition: 0.1s
@@ -35,6 +37,7 @@
         color: #ABABAB
         font-size: 18px
         line-height: 20px
+        margin-bottom: 10px
 
         &:hover
           transition: 0.1s
@@ -129,3 +132,159 @@
       &:hover
         transition: 0.1s
         color: #ABABAB
+
+@media (max-width: 1440px)
+  .footer
+    &-links
+      flex-basis: 40%
+
+    &-copyright
+      font-size: 14px
+
+    &-underline
+      &__link
+        font-size: 14px
+
+@media (max-width: 1200px)
+  .footer
+    &-underline
+      &__link
+        font-size: 14px
+        margin: 0 10px 0 10px
+
+        &:first-child
+          margin: 0 10px 0 0
+
+    &-video
+      flex-basis: 36%
+      height: 260px
+      width: 268px
+
+    &-links
+      flex-basis: 60%
+      padding-top: 40px
+      padding-bottom: 40px
+
+    &-description
+      width: 180px
+
+      &__text
+        font-size: 14px
+        line-height: 20px
+        margin-bottom: 100px
+
+      &__links
+        a
+          margin-right: 20px
+
+@media (max-width: 992px)
+  .footer
+    padding-top: 60px
+
+    &-copyright
+      font-size: 10px
+
+    &-underline
+      &__link
+        font-size: 10px
+        margin: 0 5px 0 5px
+
+        &:first-child
+          margin: 0 5px 0 0
+
+    &-video
+      flex-basis: 36%
+      height: 175px
+      width: 180px
+      align-self: center
+
+    &-links
+      flex-basis: 60%
+      padding-top: 20px
+      padding-bottom: 10px
+
+      &__block
+        &_title
+          font-size: 16px
+
+        a
+          font-size: 13px
+
+    &-description
+      width: 180px
+
+      &__text
+        font-size: 14px
+        line-height: 20px
+        margin-bottom: 65px
+
+      &__links
+        a
+          margin-right: 20px
+
+
+@media (max-width: 768px)
+  .footer
+    &-wrap
+      display: block
+
+    &-description
+      margin-right: auto
+      width: 320px
+
+      &__logo
+        height: 60px
+        width: 184px
+
+      &__text
+        margin-top: 22px
+        margin-bottom: 50px
+        font-size: 20px
+        line-height: 32px
+
+      &__links
+        margin-bottom: 40px
+
+        a
+          margin-right: 30px
+
+    &-links
+
+      padding-top: 40px
+      padding-left: 40px
+      padding-bottom: 20px
+      border-radius: 30px
+      display: block
+      margin-bottom: 40px
+
+
+      &__block
+        &_title
+          line-height: 30px
+          font-size: 20px
+          margin-top: 0
+          margin-bottom: 15px
+
+        a
+          font-size: 18px
+          line-height: 20px
+          margin-bottom: 15px
+
+    &-video
+      margin: auto
+      height: 327px
+      width: 337px
+
+    &-underline
+      display: block
+
+      &__links
+        display: flex
+        justify-content: flex-end
+        align-items: center
+
+@media (max-width: 512px)
+  .footer
+    &-video
+      height: 310px
+      width: 317px

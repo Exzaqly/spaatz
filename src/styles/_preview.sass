@@ -1,18 +1,21 @@
 .preview
   background: linear-gradient(294.27deg, #30A8FF 0%, #C4F5C9 100%)
   padding-top: 140px
+
   &-img
     background: url("../assets/preview-img.png")
     -webkit-background-size: cover
     background-size: cover
     width: 1340px
     height: 599px
+
   &-wrap
     display: flex
     align-items: flex-end
     justify-content: space-between
 
     margin-bottom: 70px
+
   &-title
     width: 662px
     margin: 0
@@ -20,9 +23,66 @@
     font-size: 65px
     line-height: 84.5px
 
-
-
   img
     margin: 27px 24px 27px 19px
 
-  
+
+@media (max-width: 1440px)
+  .preview
+    &-img
+      width: 1140px
+      height: 510px
+
+    &-title
+      font-size: 50px
+      line-height: 65px
+
+@media (max-width: 1200px)
+  .preview
+    padding-top: 100px
+
+    &-img
+      width: 960px
+      height: 429px
+
+    &-title
+      font-size: 40px
+      line-height: 50px
+
+@media (max-width: 992px)
+  .preview
+    &-img
+      width: 720px
+      height: 322px
+
+    &-title
+      width: 70%
+
+@media (max-width: 768px)
+  .preview
+
+    &-img
+      width: 540px
+      height: 241px
+
+    &-title
+      width: 50%
+      font-size: 30px
+      line-height: 40px
+
+@media (max-width: 512px)
+  .preview
+    &-wrap
+      display: block
+      margin-bottom: 20px
+
+    &-img
+      width: 320px
+      height: 143px
+
+    &-title
+      width: 100%
+      text-align: center
+      font-size: 30px
+      line-height: 40px
+      margin-bottom: 20px
